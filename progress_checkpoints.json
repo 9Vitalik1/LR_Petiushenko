@@ -1,0 +1,62 @@
+[
+  {
+    "model": "random",
+    "steps": 0,
+    "wins": 0,
+    "episodes": 10,
+    "agent": 0.7,
+    "cpu": 21.0,
+    "diff": -20.3,
+    "hits": 1.5
+  },
+  {
+    "model": "i100",
+    "steps": 204800,
+    "wins": 0,
+    "episodes": 10,
+    "agent": 10.3,
+    "cpu": 21.0,
+    "diff": -10.7,
+    "hits": 65.9
+  },
+  {
+    "model": "i250",
+    "steps": 512000,
+    "wins": 7,
+    "episodes": 10,
+    "agent": 20.4,
+    "cpu": 15.2,
+    "diff": 5.2,
+    "hits": 123.5
+  },
+  {
+    "model": "i500",
+    "steps": 1024000,
+    "wins": 10,
+    "episodes": 10,
+    "agent": 21.0,
+    "cpu": 6.9,
+    "diff": 14.1,
+    "hits": 128.9
+  },
+  {
+    "model": "i750",
+    "steps": 1536000,
+    "wins": 10,
+    "episodes": 10,
+    "agent": 19.9,
+    "cpu": 7.8,
+    "diff": 12.1,
+    "hits": 164.2
+  },
+  {
+    "model": "final",
+    "steps": 1998848,
+    "wins": 10,
+    "episodes": 10,
+    "agent": 20.5,
+    "cpu": 6.2,
+    "diff": 14.3,
+    "hits": 161.2
+  }
+]

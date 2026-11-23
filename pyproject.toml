@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pongai"
+version = "1.0.0"
+description = "Atari Pong: actor-critic neural network trained with PPO"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.2",
+  "gymnasium>=1.0",
+  "ale-py>=0.10",
+  "numpy>=1.26",
+  "matplotlib>=3.8",
+  "imageio>=2.34",
+]
+
+[project.optional-dependencies]
+play = ["pygame>=2.5"]
+test = ["pytest>=8"]
+
+[project.scripts]
+pong-train = "pong_ai.cli.train:main"
+pong-evaluate = "pong_ai.cli.evaluate:main"
+pong-play = "pong_ai.cli.play:main"
+pong-record = "pong_ai.cli.record:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
